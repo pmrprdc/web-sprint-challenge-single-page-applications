@@ -20,10 +20,10 @@ const onChange = evt =>{
                     <h2>Please Choose Your Pizza Size</h2>
                         <label>
                             Pizza Size 
-                             <select>
-                            <option>small</option>
-                            <option>medium</option>
-                            <option>large</option>
+                             <select name="size">
+                            <option value="small">small</option>
+                            <option value="medium">medium</option>
+                            <option value="large">large</option>
                         </select>  
 
                         </label>
