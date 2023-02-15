@@ -4,13 +4,44 @@ export default function Order (props) {
 
     return (
             <form>
-                <h1>Order Page</h1>
-                <form>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
+                <h1>BUILD YOUR OWN PIZZA</h1>
+                <form>  
+                        <label>
+                            Pizza Size 
+                             <select>
+                            <option>small</option>
+                            <option>medium</option>
+                            <option>large</option>
+                        </select>  
+
+                        </label>
+
+                            <br>
+                            </br>
+                        <label>
+                            Choice of Sauce
+                            <br></br>
+                            <label>
+                                Original Red
+                                <input type="radio" name="sauce" />
+                            </label>
+                            <label>
+                                Garlic Ranch
+                                <input type="radio" name="sauce" />
+                            </label>
+                            <label>
+                                BBQ Sauce
+                                <input type="radio" name="sauce" />
+                            </label>
+                            <label>
+                                Spinach Alfredo
+                                <input type="radio" name="sauce" />
+                            </label>
+                            
+                            
+                        </label>
+                      
+                        
                 </form>
 
 
