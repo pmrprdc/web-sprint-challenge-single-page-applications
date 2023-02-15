@@ -9,6 +9,10 @@ const onSubmit = evt =>{
     
 }
 
+const onChange = evt =>{
+    console.log('something changed')
+}
+
 
     return (
             <form>
@@ -45,7 +49,6 @@ const onSubmit = evt =>{
                                 Spinach Alfredo
                                 <input type="radio" name="sauce" />
                             </label>
-                            
                             <button>Submit</button>
                         </label>
 
