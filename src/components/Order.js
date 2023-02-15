@@ -111,8 +111,27 @@ const onChange = evt =>{
                                     Extra Cheese
                                     <input type="checkbox"/>
                                 </label>
-                              
-                            <button>Submit</button>
+                               <h2>
+                                Choice of Substitute
+                               </h2>
+                               <p>Choose up to 1</p>
+
+                               
+                               <label>
+                                    Gluten Free crust
+                                    <input type="checkbox"/>
+                                </label>
+
+                                <h2>Special Instructions</h2>
+                                <input type="text"/>
+                                
+                                <div>
+                                    <h1>Running Total</h1>
+                                    <h1>1$</h1>
+                                    <button>increase</button>
+                                    <button>decrease</button>
+                                </div>
+                            <button>Add Selected To Order</button>
                         </label>
 
                   
