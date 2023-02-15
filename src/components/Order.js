@@ -56,61 +56,61 @@ const onChange = evt =>{
 
                                 <label>
                                     Pepperoni
-                                    <input type="checkbox"/>
+                                    <input name="pepperoni" type="checkbox"/>
                                 </label>
                                 <label>
                                     Sausage
-                                    <input type="checkbox"/>
+                                    <input name ="sausage" type="checkbox"/>
                                 </label>
                                 <label>
                                     Canadian Bacon
-                                    <input type="checkbox"/>
+                                    <input name="canadian-bacon"type="checkbox"/>
                                 </label>
                                 <label>
                                     Spicy Italian Sausage
-                                    <input type="checkbox"/>
+                                    <input name="spicy-italian-sausage" type="checkbox"/>
                                 </label>
                                 <label>
                                     Grilled Chicken
-                                    <input type="checkbox"/>
+                                    <input name="grilled-chicken" type="checkbox"/>
                                 </label>
                                 <label>
                                     Onions
-                                    <input type="checkbox"/>
+                                    <input name="onions" type="checkbox"/>
                                 </label>
                                 <label>
                                     Greem Pepper
-                                    <input type="checkbox"/>
+                                    <input name="green-pepper" type="checkbox"/>
                                 </label>
                                 <label>
                                     Diced Tomatos
-                                    <input type="checkbox"/>
+                                    <input name="diced-tomatoes" type="checkbox"/>
                                 </label>
                                
                                 <br></br>
                                 <label>
                                     Black Olives
-                                    <input type="checkbox"/>
+                                    <input name="black-olives" type="checkbox"/>
                                 </label>
                                 <label>
                                     Roasted Garlic
-                                    <input type="checkbox"/>
+                                    <input name="roasted-garlic" type="checkbox"/>
                                 </label>
                                 <label>
                                     Artichoke Hearts
-                                    <input type="checkbox"/>
+                                    <input name="artichoke-hearts" type="checkbox"/>
                                 </label>
                                 <label>
                                     Three Cheese
-                                    <input type="checkbox"/>
+                                    <input name="three-cheese" type="checkbox"/>
                                 </label>
                                 <label>
                                     Pineapple
-                                    <input type="checkbox"/>
+                                    <input name="pineapple" type="checkbox"/>
                                 </label>
                                 <label>
                                     Extra Cheese
-                                    <input type="checkbox"/>
+                                    <input name="extra-cheese" type="checkbox"/>
                                 </label>
                                <h2>
                                 Choice of Substitute
