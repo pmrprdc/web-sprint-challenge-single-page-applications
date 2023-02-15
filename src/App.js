@@ -2,16 +2,17 @@ import React from "react";
 import {Route, Link} from "react-router-dom"
 import Nav from "./components/Nav"
 import Home from "./components/Home"
+import Order from "./components/Order"
 
 const App = () => {
   return (
     <>
       <Nav />
-      <Route path="/">
+      <Route exact path="/">
         <Home />
       </Route>
-      <Route path="order">
-
+      <Route path="/order">
+        <Order />
       </Route>
       <Route path="/thank-you">
 
