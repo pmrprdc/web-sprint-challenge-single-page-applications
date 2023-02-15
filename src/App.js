@@ -3,6 +3,8 @@ import {Route, Link} from "react-router-dom"
 import Nav from "./components/Nav"
 import Home from "./components/Home"
 import Order from "./components/Order"
+import Thankyou from "./components/Thankyou";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -15,9 +17,9 @@ const App = () => {
         <Order />
       </Route>
       <Route path="/thank-you">
-
+        <Thankyou />
       </Route>
-
+      <Footer />
     </>
   );
 };
