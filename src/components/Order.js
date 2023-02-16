@@ -230,7 +230,11 @@ const onChange = evt =>{
                                 </label>
 
                                 <h2>Special Instructions</h2>
-                                <input type="text"/>
+                                <input type="text"
+                                value={formValues['special-instructions']}
+                                onChange={onChange}
+                                name="special-instructions"
+                                />
                                 
                                 <div>
                                     <h1>Running Total</h1>
