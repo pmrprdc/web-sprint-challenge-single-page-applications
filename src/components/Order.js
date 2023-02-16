@@ -14,10 +14,10 @@ const onChange = evt =>{
     const {type, checked, name, value} = evt.target;
     const valueToUse = type === "checkbox" ? checked : value;
     setFormValues({...formValues, [name]:valueToUse })
-
+    
 
 }   
-
+    console.log(formValues);
 
     return (
             <form>
@@ -94,57 +94,123 @@ const onChange = evt =>{
                                 </label>
                                 <label>
                                     Sausage
-                                    <input name ="sausage" type="checkbox"/>
+                                    <input
+                                    name ="sausage"
+                                    type="checkbox"
+                                    onChange={onChange}
+                                    checked={formValues.sausage}
+                                    />
                                 </label>
                                 <label>
                                     Canadian Bacon
-                                    <input name="canadian-bacon"type="checkbox"/>
+                                    <input
+                                     name="canadian-bacon"
+                                     type="checkbox"
+                                     onChange={onChange}
+                                     checked={formValues['canadian-bacon']}
+                                     />
                                 </label>
                                 <label>
                                     Spicy Italian Sausage
-                                    <input name="spicy-italian-sausage" type="checkbox"/>
+                                    <input
+                                     name="spicy-italian-sausage"
+                                     type="checkbox"
+                                     onChange={onChange}
+                                     checked={formValues['spicy-italian-sausage']} 
+                                      />
                                 </label>
                                 <label>
                                     Grilled Chicken
-                                    <input name="grilled-chicken" type="checkbox"/>
+                                    <input
+                                     name="grilled-chicken"
+                                      type="checkbox"
+                                      onChange={onChange}
+                                      checked={formValues['grilled-chicken']}
+                                      />
                                 </label>
                                 <label>
                                     Onions
-                                    <input name="onions" type="checkbox"/>
+                                    <input
+                                    name="onions"
+                                    type="checkbox"
+                                    onChange={onChange}
+                                    checked={formValues.onions}
+                                    />
                                 </label>
                                 <label>
                                     Green Pepper
-                                    <input name="green-pepper" type="checkbox"/>
+                                    <input
+                                    name="green-pepper"
+                                    type="checkbox"
+                                    onChange={onChange}
+                                    checked={formValues.checkbox}
+                                    />
                                 </label>
                                 <label>
                                     Diced Tomatos
-                                    <input name="diced-tomatoes" type="checkbox"/>
+                                    <input
+                                     name="diced-tomatoes" 
+                                     type="checkbox"
+                                     onChange={onChange}
+                                    checked={formValues['diced-tomatoes']}
+                                     />
                                 </label>
                                
                                 <br></br>
                                 <label>
                                     Black Olives
-                                    <input name="black-olives" type="checkbox"/>
+                                    <input
+                                    name="black-olives"
+                                    type="checkbox"
+                                    onChange={onChange}
+                                    checked={formValues['black-olives']}
+                                    />
                                 </label>
                                 <label>
                                     Roasted Garlic
-                                    <input name="roasted-garlic" type="checkbox"/>
+                                    <input
+                                    name="roasted-garlic"
+                                    type="checkbox"
+                                    onChange={onChange}
+                                    checked={formValues['roasted-garlic']}
+
+                                    />
                                 </label>
                                 <label>
                                     Artichoke Hearts
-                                    <input name="artichoke-hearts" type="checkbox"/>
+                                    <input
+                                     name="artichoke-hearts"
+                                    type="checkbox"
+                                    onChange={onChange}
+                                    checked={formValues['artichoke-hearts']}
+                                    />
                                 </label>
                                 <label>
                                     Three Cheese
-                                    <input name="three-cheese" type="checkbox"/>
+                                    <input
+                                    name="three-cheese"
+                                    type="checkbox"
+                                    onChange={onChange}
+                                    checked={formValues['three-cheese']}
+                                    />
                                 </label>
                                 <label>
                                     Pineapple
-                                    <input name="pineapple" type="checkbox"/>
+                                    <input
+                                    name="pineapple"
+                                    type="checkbox"
+                                    onChange={onChange}
+                                    checked={formValues.pineapple}
+                                    />
                                 </label>
                                 <label>
                                     Extra Cheese
-                                    <input name="extra-cheese" type="checkbox"/>
+                                    <input
+                                     name="extra-cheese" 
+                                     type="checkbox"
+                                     onChange={onChange}
+                                    checked={formValues['extra-cheese']}
+                                     />
                                 </label>
                                <h2>
                                 Choice of Substitute

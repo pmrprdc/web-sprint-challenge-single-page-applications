@@ -20,7 +20,7 @@ const App = () => {
     ["grilled-chicken"]: false,
     onions: false,
     ['green-pepper']: false,
-    ['diced-tomatos']: false,
+    ['diced-tomatoes']: false,
     ['black-olives']: false,
     ['roasted-garlic']: false,
     ['artichoke-hearts']: false,
