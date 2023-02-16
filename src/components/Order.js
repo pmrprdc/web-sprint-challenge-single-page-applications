@@ -10,11 +10,10 @@ const onSubmit = evt =>{
 }
 
 const onChange = evt =>{
-    console.log('something changed')
+    console.log(evt.target)
     const {type, checked, name, value} = evt.target;
     const valueToUse = type === "checkbox" ? checked : value;
     setFormValues({...formValues, [name]:valueToUse })
-    console.log(formValues)
     
 
 }   
@@ -45,19 +44,40 @@ const onChange = evt =>{
                             <br></br>
                             <label>
                                 Original Red
-                                <input type="radio" name="sauce" value="original-red" />
+                                <input type="radio"
+                                name="sauce"
+                                value="original-red"
+                                checked={formValues.sauce==="original-red"}
+                                onChange={onChange} />
                             </label>
                             <label>
                                 Garlic Ranch
-                                <input type="radio" name="sauce" value="garlic-ranch" />
+                                <input 
+                                type="radio" 
+                                name="sauce" 
+                                value="garlic-ranch"
+                                checked={formValues.sauce==="garlic-ranch"}
+                                onChange={onChange}
+                                />
                             </label>
                             <label>
                                 BBQ Sauce
-                                <input type="radio" name="sauce" value="bbq-sauce" />
+                                <input
+                                 type="radio" 
+                                 name="sauce" 
+                                 value="bbq-sauce"
+                                 checked={formValues.sauce==="bbq-sauce"}
+                                 onChange={onChange}
+                                  />
                             </label>
                             <label>
                                 Spinach Alfredo
-                                <input type="radio" name="sauce"  value="spinach-alfredo"
+                                <input
+                                 type="radio" 
+                                 name="sauce"  
+                                 value="spinach-alfredo"
+                                 checked={formValues.sauce==="spinach-alfredo"}
+                                 onChange={onChange}
                                 />
                             </label>
 

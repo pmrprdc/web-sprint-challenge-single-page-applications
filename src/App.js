@@ -11,7 +11,8 @@ import {useState} from "react"
 
 const App = () => {
   const initialFormValues = {
-    size: "large"
+    size: "large",
+    sauce: ""
 
   }
   const [formValues, setFormValues] = useState(initialFormValues)
