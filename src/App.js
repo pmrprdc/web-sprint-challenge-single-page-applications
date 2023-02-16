@@ -5,8 +5,16 @@ import Home from "./components/Home"
 import Order from "./components/Order"
 import Thankyou from "./components/Thankyou";
 import Footer from "./components/Footer";
+import {useState} from "react"
+
+
 
 const App = () => {
+  const initialFormValues = {
+  
+  }
+  const [formValues, setFormValues] = useState(initialFormValues)
+  
   return (
     <>
       <Nav />
@@ -14,7 +22,7 @@ const App = () => {
         <Home />
       </Route>
       <Route path="/pizza">
-        <Order />
+        <Order formValues={formValues} setFormValues={setFormValues} />
       </Route>
       <Route path="/thank-you">
         <Thankyou />

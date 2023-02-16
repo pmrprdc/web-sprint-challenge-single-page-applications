@@ -1,10 +1,12 @@
 import React, {useState} from "react"
 export default function Order (props) {
 
-    
+
+const {formValues, setFormValues} = props;
+
 const onSubmit = evt =>{
     evt.preventDefault();
-    
+    console.log("form submit")
 }
 
 const onChange = evt =>{
