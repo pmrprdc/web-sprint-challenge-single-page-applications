@@ -35,6 +35,7 @@ const App = () => {
 
   }
   const [formValues, setFormValues] = useState(initialFormValues)
+  const [submitDisabled, setSubmitDisabled] = useState(true)
 
   useEffect(()=>{
       console.log("formValuesChanged!")
@@ -48,7 +49,7 @@ const App = () => {
         <Home />
       </Route>
       <Route path="/pizza">
-        <Order formValues={formValues} setFormValues={setFormValues} />
+        <Order disabled={submitDisabled} formValues={formValues} setFormValues={setFormValues} />
       </Route>
       <Route path="/thank-you">
         <Thankyou />

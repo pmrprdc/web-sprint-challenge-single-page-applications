@@ -2,7 +2,7 @@ import React, {useState} from "react"
 export default function Order (props) {
 
 
-const {formValues, setFormValues} = props;
+const {formValues, setFormValues, disabled} = props;
 
 const onSubmit = evt =>{
     evt.preventDefault();
@@ -30,6 +30,7 @@ const onChange = evt =>{
                 name="name" 
                 value={formValues.name}
                 onChange={onChange}
+                placeholder="  for the order"
                 /> 
                 </label>
 
@@ -245,7 +246,7 @@ const onChange = evt =>{
                                 name="special-instructions"
                                 />
                                 
-                                    <button onClick={onSubmit}>Create Order</button>
+                                    <button disabled={disabled} onClick={onSubmit}>Create Order</button>
                         </label>
 
                   
