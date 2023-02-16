@@ -26,7 +26,8 @@ const App = () => {
     ['artichoke-hearts']: false,
     ['three-cheese']:false,
     pineapple: false,
-    ['extra-cheese']: false
+    ['extra-cheese']: false,
+    ['gluten-free']: false
 
     
 

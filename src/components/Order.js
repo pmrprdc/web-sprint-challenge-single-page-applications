@@ -220,7 +220,13 @@ const onChange = evt =>{
                                
                                <label>
                                     Gluten Free crust
-                                    <input type="checkbox"/>
+                                    <input 
+                                    type="checkbox"
+                                    name="gluten-free"
+                                    checked={formValues["gluten-free"]}
+                                    onChange={onChange}
+                                    />
+                                    
                                 </label>
 
                                 <h2>Special Instructions</h2>
