@@ -17,12 +17,21 @@ const onChange = evt =>{
     
 
 }   
-   
+   console.log(formValues)
 
     return (
-            <form>
+            <form id="pizza-form">
                 <h1>BUILD YOUR OWN PIZZA</h1>
-                  
+                <label>
+                    name
+                <input 
+                id="name-input"
+                type="text" 
+                name="name" 
+                value={formValues.name}
+                onChange={onChange}
+                /> 
+                </label>
 
                     <h2>Please Choose Your Pizza Size</h2>
                         <label>
@@ -42,7 +51,7 @@ const onChange = evt =>{
                             <h2>What kind of sauce do you prefer?</h2>
                             Choice of Sauce
                             <br></br>
-                            <label htmlFor="sauce">
+                            <label>
                                 Original Red
                                 <input type="radio"
                                 name="sauce"
@@ -83,7 +92,7 @@ const onChange = evt =>{
 
                             <h2>Let's add toppings!</h2>
 
-                                <label htmlFor="pepperoni">
+                                <label >
                                     Pepperoni
                                     <input 
                                     name="pepperoni" 

@@ -11,6 +11,7 @@ import {useState, useEffect} from "react"
 
 const App = () => {
   const initialFormValues = {
+    name:"",
     size: "--select--",
     sauce: "",
     pepperoni: false,
