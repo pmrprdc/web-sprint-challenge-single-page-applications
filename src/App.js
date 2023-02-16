@@ -11,10 +11,11 @@ import {useState} from "react"
 
 const App = () => {
   const initialFormValues = {
-  
+    size: "large"
+
   }
   const [formValues, setFormValues] = useState(initialFormValues)
-  
+
   return (
     <>
       <Nav />

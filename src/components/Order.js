@@ -22,7 +22,8 @@ const onChange = evt =>{
                     <h2>Please Choose Your Pizza Size</h2>
                         <label>
                             Pizza Size 
-                             <select name="size">
+                             <select value={formValues.size} name="size">
+                            <option value="select">---select---</option>
                             <option value="small">small</option>
                             <option value="medium">medium</option>
                             <option value="large">large</option>
