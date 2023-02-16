@@ -12,7 +12,23 @@ import {useState} from "react"
 const App = () => {
   const initialFormValues = {
     size: "large",
-    sauce: ""
+    sauce: "",
+    pepperoni: false,
+    sausage: false,
+    ["canadian-bacon"]:false,
+    ["spicy-italian-sausage"]: false,
+    ["grilled-chicken"]: false,
+    onions: false,
+    ['green-pepper']: false,
+    ['diced-tomatos']: false,
+    ['black-olives']: false,
+    ['roasted-garlic']: false,
+    ['artichoke-hearts']: false,
+    ['three-cheese']:false,
+    pineapple: false,
+    ['extra-cheese']: false
+
+    
 
   }
   const [formValues, setFormValues] = useState(initialFormValues)

@@ -10,11 +10,11 @@ const onSubmit = evt =>{
 }
 
 const onChange = evt =>{
-    console.log(evt.target)
+    
     const {type, checked, name, value} = evt.target;
     const valueToUse = type === "checkbox" ? checked : value;
     setFormValues({...formValues, [name]:valueToUse })
-    
+
 
 }   
 
@@ -22,7 +22,7 @@ const onChange = evt =>{
     return (
             <form>
                 <h1>BUILD YOUR OWN PIZZA</h1>
-                <form>  
+                  
 
                     <h2>Please Choose Your Pizza Size</h2>
                         <label>
@@ -42,7 +42,7 @@ const onChange = evt =>{
                             <h2>What kind of sauce do you prefer?</h2>
                             Choice of Sauce
                             <br></br>
-                            <label>
+                            <label htmlFor="sauce">
                                 Original Red
                                 <input type="radio"
                                 name="sauce"
@@ -83,9 +83,14 @@ const onChange = evt =>{
 
                             <h2>Let's add toppings!</h2>
 
-                                <label>
+                                <label htmlFor="pepperoni">
                                     Pepperoni
-                                    <input name="pepperoni" type="checkbox"/>
+                                    <input 
+                                    name="pepperoni" 
+                                    type="checkbox"
+                                    onChange={onChange}
+                                    checked={formValues.pepperoni}
+                                    />
                                 </label>
                                 <label>
                                     Sausage
@@ -108,7 +113,7 @@ const onChange = evt =>{
                                     <input name="onions" type="checkbox"/>
                                 </label>
                                 <label>
-                                    Greem Pepper
+                                    Green Pepper
                                     <input name="green-pepper" type="checkbox"/>
                                 </label>
                                 <label>
@@ -169,7 +174,7 @@ const onChange = evt =>{
                 </form>
 
 
-            </form>
+         
             
     )
 }
