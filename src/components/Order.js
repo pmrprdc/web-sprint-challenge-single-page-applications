@@ -11,7 +11,13 @@ const onSubmit = evt =>{
 
 const onChange = evt =>{
     console.log('something changed')
-}
+    const {type, checked, name, value} = evt.target;
+    const valueToUse = type === "checkbox" ? checked : value;
+    setFormValues({...formValues, [name]:valueToUse })
+    console.log(formValues)
+    
+
+}   
 
 
     return (
@@ -22,7 +28,7 @@ const onChange = evt =>{
                     <h2>Please Choose Your Pizza Size</h2>
                         <label>
                             Pizza Size 
-                             <select value={formValues.size} name="size">
+                             <select onChange={onChange} value={formValues.size} name="size">
                             <option value="select">---select---</option>
                             <option value="small">small</option>
                             <option value="medium">medium</option>
