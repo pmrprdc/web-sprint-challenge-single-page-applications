@@ -6,7 +6,7 @@ const {formValues, setFormValues} = props;
 
 const onSubmit = evt =>{
     evt.preventDefault();
-    console.log("form submit")
+    console.log(evt.target)
 }
 
 const onChange = evt =>{
@@ -17,7 +17,7 @@ const onChange = evt =>{
     
 
 }   
-    console.log(formValues);
+   
 
     return (
             <form>
@@ -236,13 +236,7 @@ const onChange = evt =>{
                                 name="special-instructions"
                                 />
                                 
-                                <div>
-                                    <h1>Running Total</h1>
-                                    <h1>1$</h1>
-                                    <button>increase</button>
-                                    <button>decrease</button>
-                                </div>
-                            <button>Add Selected To Order</button>
+                                    <button onClick={onSubmit}>Create Order</button>
                         </label>
 
                   

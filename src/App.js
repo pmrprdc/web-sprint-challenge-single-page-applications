@@ -5,13 +5,13 @@ import Home from "./components/Home"
 import Order from "./components/Order"
 import Thankyou from "./components/Thankyou";
 import Footer from "./components/Footer";
-import {useState} from "react"
+import {useState, useEffect} from "react"
 
 
 
 const App = () => {
   const initialFormValues = {
-    size: "large",
+    size: "--select--",
     sauce: "",
     pepperoni: false,
     sausage: false,
@@ -34,6 +34,11 @@ const App = () => {
 
   }
   const [formValues, setFormValues] = useState(initialFormValues)
+
+  useEffect(()=>{
+      console.log("formValuesChanged!")
+  },[formValues])
+
 
   return (
     <>
