@@ -9,9 +9,6 @@ const formSchema = yup.object().shape({
     .required("A name for the order is required")
     .min(3, "Order name must be 3 characters or longer!")
     
-
-
-
 })
 
 

@@ -3,7 +3,7 @@ import schema from "../validation/formSchema"
 export default function Order (props) {
 
 
-const {formValues, setFormValues, disabled, setDisabled} = props;
+const {formValues, setFormValues, disabled, setDisabled, validate, formErrors} = props;
 
 const onSubmit = evt =>{
     evt.preventDefault();
@@ -13,12 +13,14 @@ const onSubmit = evt =>{
 const onChange = evt =>{
     
     const {type, checked, name, value} = evt.target;
+    
+    validate(name, value)
     const valueToUse = type === "checkbox" ? checked : value;
     setFormValues({...formValues, [name]:valueToUse })
-   
+    console.log(formErrors)
 
 }   
-  
+
 useEffect(()=>{
     schema.isValid(formValues).then(valid =>setDisabled(!valid))
 }, [formValues])
@@ -38,6 +40,7 @@ useEffect(()=>{
                 placeholder="  for the order"
                 /> 
                 </label>
+              <div>{formErrors.name}</div>
 
                     <h2>Please Choose Your Pizza Size</h2>
                         <label>

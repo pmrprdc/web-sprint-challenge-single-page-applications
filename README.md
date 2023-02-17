@@ -39,10 +39,10 @@ Commit your code regularly and meaningfully. This helps you in case you ever nee
 
 Your finished project must include all of the following requirements:
 
-- [ ] A homepage that has a "/" route and links to your form (button, nav bar, or any other type of link is acceptable but must have an id of "order-pizza")
+- [] A homepage that has a "/" route and links to your form (button, nav bar, or any other type of link is acceptable but must have an id of "order-pizza")
 - [ ] A order form that has a "/pizza" route and shows the form
-- [ ] A form with an id of "pizza-form"
-- [ ] A name text input field with an id of "name-input"
+- [x] A form with an id of "pizza-form"
+- [x] A name text input field with an id of "name-input"
 - [ ] Validation for name and the error message is "name must be at least 2 characters" (Use this exact error message to make sure tests pass) ::: VERY IMPORTANT TO USE THAT EXACT ERROR MESSAGE (casing included!)
 - [ ] A dropdown for pizza size with an id of "size-dropdown"
 - [ ] A checklist for toppings - at least 4 (hint: name each separately!)
@@ -50,6 +50,7 @@ Your finished project must include all of the following requirements:
 - [ ] An Add to Order button that has an id of "order-button" and that submits the form and returns a database record of name, size, toppings and special instructions
 
 Data should look something like
+
 ```
 {
     name: string,
@@ -59,6 +60,7 @@ Data should look something like
     special: string,
 }
 ```
+
 Note - your payload should look similar to the above data
 
 #### Testing MVP
@@ -79,7 +81,7 @@ From there in your newly created `cypress` folder in VSCode, navigate to the `e2
 
 Follow these steps for completing your project.
 
-Set up your fork on Github to codegrade following the instructions [here](https://bloomtech-1.wistia.com/medias/mpf3xru99v), pushing commits to your main branch. At this point you should be complete with your sprint challenge requirements!  
+Set up your fork on Github to codegrade following the instructions [here](https://bloomtech-1.wistia.com/medias/mpf3xru99v), pushing commits to your main branch. At this point you should be complete with your sprint challenge requirements!
 
 ### Task 3: Stretch Goals
 

@@ -6,7 +6,8 @@ import Order from "./components/Order"
 import Thankyou from "./components/Thankyou";
 import Footer from "./components/Footer";
 import {useState, useEffect} from "react"
-
+import schema from "./validation/formSchema"
+import * as yup from "yup"
 
 
 const App = () => {
@@ -36,20 +37,27 @@ const App = () => {
   }
   const [formValues, setFormValues] = useState(initialFormValues)
   const [submitDisabled, setSubmitDisabled] = useState(true)
-
-  useEffect(()=>{
-      console.log("formValuesChanged!")
-  },[formValues])
-
-
+  const [formErrors, setFormErrors] = useState({})
+  
+  
+  
+  const validate = (name, value) =>{
+    yup.reach(schema, name)
+    .validate(value)
+    .then(()=> setFormErrors({...formErrors, [name]:""}))
+    .catch(err => setFormErrors({...formErrors, [name]:err.errors[0]}))
+  
+  }
+ 
   return (
     <>
       <Nav />
+      
       <Route exact path="/">
         <Home />
       </Route>
       <Route path="/pizza">
-        <Order disabled={submitDisabled} setDisabled={setSubmitDisabled} formValues={formValues} setFormValues={setFormValues} />
+        <Order formErrors={formErrors} validate={validate} disabled={submitDisabled} setDisabled={setSubmitDisabled} formValues={formValues} setFormValues={setFormValues} />
       </Route>
       <Route path="/thank-you">
         <Thankyou />
