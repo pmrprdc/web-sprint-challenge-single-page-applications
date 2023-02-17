@@ -17,7 +17,7 @@ const onChange = evt =>{
     
 
 }   
-   console.log(formValues)
+  
 
     return (
             <form id="pizza-form">
