@@ -49,7 +49,7 @@ const App = () => {
         <Home />
       </Route>
       <Route path="/pizza">
-        <Order disabled={submitDisabled} formValues={formValues} setFormValues={setFormValues} />
+        <Order disabled={submitDisabled} setDisabled={setSubmitDisabled} formValues={formValues} setFormValues={setFormValues} />
       </Route>
       <Route path="/thank-you">
         <Thankyou />

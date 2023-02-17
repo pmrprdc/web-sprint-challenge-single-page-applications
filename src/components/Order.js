@@ -1,8 +1,9 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
+import schema from "../validation/formSchema"
 export default function Order (props) {
 
 
-const {formValues, setFormValues, disabled} = props;
+const {formValues, setFormValues, disabled, setDisabled} = props;
 
 const onSubmit = evt =>{
     evt.preventDefault();
@@ -14,10 +15,14 @@ const onChange = evt =>{
     const {type, checked, name, value} = evt.target;
     const valueToUse = type === "checkbox" ? checked : value;
     setFormValues({...formValues, [name]:valueToUse })
-    
+   
 
 }   
   
+useEffect(()=>{
+    schema.isValid(formValues).then(valid =>setDisabled(!valid))
+}, [formValues])
+
 
     return (
             <form id="pizza-form">
