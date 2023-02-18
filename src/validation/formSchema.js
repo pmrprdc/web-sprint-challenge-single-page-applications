@@ -28,7 +28,7 @@ const formSchema = yup.object().shape({
     pineapple: yup.bool(),
     ['extra-cheese']: yup.bool(),
     ['gluten-free']: yup.bool(),
-    ['special-instructions']: yup.string()
+    ['specialInstructions']: yup.string()
     
 
     

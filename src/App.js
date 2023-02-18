@@ -30,7 +30,7 @@ const App = () => {
     pineapple: false,
     ['extra-cheese']: false,
     ['gluten-free']: false,
-    ['special-instructions']: ""
+    ['specialInstructions']: ""
 
     
 
