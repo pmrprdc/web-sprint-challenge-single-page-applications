@@ -3,6 +3,6 @@ import React from "react"
 
 export default function Home(props){
 
-
-    return (<h1>Home Page</h1>)
+    
+    return (<button id="order-pizza">Order Pizza</button>)
 }
