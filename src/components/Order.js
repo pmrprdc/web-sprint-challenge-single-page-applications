@@ -8,10 +8,8 @@ export default function Order (props) {
  
 const {formValues, setFormValues, disabled, setDisabled, validate, formErrors} = props;
 
-const onSubmit = evt =>{
+const submit = evt =>{
     evt.preventDefault();
-    
-  
     axios.post("https://reqres.in/api/orders", formValues).then((response) => {
         console.log(response);
         
@@ -259,15 +257,14 @@ useEffect(()=>{
                                     />
                                     
                                 </label>
-
-                                <h2>Special Instructions</h2>
+                                Special Instructions
                                 <input id="special-text" type="text"
                                 value={formValues['special-instructions']}
                                 onChange={onChange}
                                 name="special-instructions"
                                 />
                                 
-                                    <button id="order-button" disabled={disabled} onClick={onSubmit}>Create Order</button>
+                                    <button id="order-button" disabled={disabled} onClick={submit}>Create Order</button>
                         </label>
 
                   
