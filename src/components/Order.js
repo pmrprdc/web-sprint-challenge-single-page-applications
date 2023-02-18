@@ -7,7 +7,8 @@ const {formValues, setFormValues, disabled, setDisabled, validate, formErrors} =
 
 const onSubmit = evt =>{
     evt.preventDefault();
-    console.log(evt.target)
+    console.log(formValues)
+    return formValues
 }
 
 const onChange = evt =>{
@@ -248,13 +249,13 @@ useEffect(()=>{
                                 </label>
 
                                 <h2>Special Instructions</h2>
-                                <input type="text"
+                                <input id="special-text" type="text"
                                 value={formValues['special-instructions']}
                                 onChange={onChange}
                                 name="special-instructions"
                                 />
                                 
-                                    <button disabled={disabled} onClick={onSubmit}>Create Order</button>
+                                    <button id="order-button" disabled={disabled} onClick={onSubmit}>Create Order</button>
                         </label>
 
                   
