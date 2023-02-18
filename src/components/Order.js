@@ -17,7 +17,7 @@ const onChange = evt =>{
     validate(name, value)
     const valueToUse = type === "checkbox" ? checked : value;
     setFormValues({...formValues, [name]:valueToUse })
-    console.log(formErrors)
+ 
 
 }   
 
@@ -45,7 +45,7 @@ useEffect(()=>{
                     <h2>Please Choose Your Pizza Size</h2>
                         <label>
                             Pizza Size 
-                             <select onChange={onChange} value={formValues.size} name="size">
+                             <select id ="size-dropdown" onChange={onChange} value={formValues.size} name="size">
                             <option value="select">---select---</option>
                             <option value="small">small</option>
                             <option value="medium">medium</option>
